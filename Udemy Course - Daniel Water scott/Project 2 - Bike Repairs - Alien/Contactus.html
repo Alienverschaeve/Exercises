@@ -60,78 +60,76 @@ Bluehost -- Bluehost codeguard addons(paying)-->
         </div>
       </nav>
     </header>
-    <div class="section">
-      <div class="main2">
-        <h1>contact us</h1>
-        <p>
-          Do you have any questions? Please do not hesitate to contact us
-          directly. Our team will come back to you within a matter of hours to
-          help your.
-        </p>
+    <div class="main2">
+      <h1>contact us</h1>
+      <p>
+        Do you have any questions? Please do not hesitate to contact us
+        directly. Our team will come back to you within a matter of hours to
+        help your.
+      </p>
+    </div>
+
+    <form action="submit">
+      <!-- First name label = input text-->
+      <div class="inputwrapper">
+        <label for="username">First name: </label>
+        <input type="text" name="username" id="username" placeholder="First Name"></input>
+      </div>
+      <!-- e-mail label = input text-->
+      <div class="inputwrapper">
+        <label for="e-mail">E-mail: </label>
+        <input type="text" name="e-mail" id="e-mail" placeholder="example@gmail.com">
+      </div>
+      <!--Input textbox--->
+      <div class="inputwrapper">
+        <textarea name="message" id="message" cols="30" rows="10"
+          placeholder="Please type your message in here"></textarea>
       </div>
 
-      <form action="submit">
+      <!--Input text+ label--->
+      <div class="inputwrapper">
+        <label for="form">Subject: </label>
+        <input text name="Form" id="form" placeholder="Insert your question.">
+      </div>
+      <!--checkbox signup-->
+      <div class="inputwrapper">
+        <input type="checkbox" name="signup" id="signup">
+        <label for="signup">Signup for newsletter</label>
+      </div>
+      <!--Radiobutton+ label--->
+      <div class="inputwrapper">
+        <p>Would you like to be contacted by e-mail?</p>
 
-        <!-- First name label = input text-->
-        <class="inputwrapper">
-          <label for="username">First name: </label>
-          <input type="text" name="username" id="username" placeholder="First Name"></input>
-    </div>
-    <!-- e-mail label = input text-->
-    <div class="inputwrapper">
-      <label for="e-mail">E-mail: </label>
-      <input type="text" name="e-mail" id="e-mail" placeholder="example@gmail.com">
-    </div>
-    <!--Input textbox--->
-    <div class="inputwrapper">
-      <textarea name="message" id="message" cols="30" rows="10"
-        placeholder="Please type your message in here"></textarea>
-    </div>
+        <input type="radio" name='yes' id="yes" value='yes'>
+        <label for="yes">Yes</label>
+        <input type="radio" name="no" id='no' value="no">
+        <label for="no">No</label>
 
-    <!--Input text+ label--->
-    <div class="inputwrapper">
-      <label for="form">Subject: </label>
-      <input text name="Form" id="form" placeholder="Insert your question.">
-    </div>
-    <!--checkbox signup-->
-    <div class="inputwrapper">
-      <input type="checkbox" name="signup" id="signup">
-      <label for="signup">Signup for newsletter</label>
-    </div>
-    <!--Radiobutton+ label--->
-    <div class="inputwrapper">
-      <p>Would you like to be contacted by e-mail?</p>
+      </div>
+      <div class="inputwrapper">
+        <button type="submit">Send</button>
+      </div>
+      <!--Keuzelijst--->
 
-      <input type="radio" name='yes' id="yes" value='yes'>
-      <label for="yes">Yes</label>
-      <input type="radio" name="no" id='no' value="no">
-      <label for="no">No</label>
+      <div class="inputwrapper">
+        <Select name="country" id="country">
+          <option value="Not chosen">Not chosen</option>
+          <option value="Galway">Galway</option>
+          <option value="Limerick">Limerick</option>
+          <option value="Dublin">Dublin</option>
+        </Select>
+        <!-- Andere inputtypes--->
+      </div>
 
-    </div>
-    <div class="inputwrapper">
-      <button type="submit">Send</button>
-    </div>
-    <!--Keuzelijst--->
+      <div class="inputwrapper">
+        <input type="date" name="" id="">
+        <input type="color" name="" id="">
+        <input type="datetime" name="" id="">
+      </div>
+    </form>
 
-    <div class="inputwrapper">
-      <Select name="country" id="country">
-        <option value="Not chosen">Not chosen</option>
-        <option value="Galway">Galway</option>
-        <option value="Limerick">Limerick</option>
-        <option value="Dublin">Dublin</option>
-      </Select>
-      <!-- Andere inputtypes--->
-    </div>
-
-    <div class="inputwrapper">
-      <input type="date" name="" id="">
-      <input type="color" name="" id="">
-      <input type="datetime" name="" id="">
-    </div>
   </div>
 
-
-  </form>
 </body>
 
 </html>

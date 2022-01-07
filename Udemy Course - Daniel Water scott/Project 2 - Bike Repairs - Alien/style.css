@@ -1,0 +1,193 @@
+html {
+  height: 100%;
+  background-image: linear-gradient(#fc5e55, #f7807a);
+}
+body {
+  /*background-color: #fc5e55;*/
+  /*Gradients== faded color
+  Sources
+  Grabient  - dribble - behance - chrome extension colorzilla (colorpicker)
+  ui design (ideas)
+  background-image:linear-gradient(90deg,red, yellow,blue);*/
+  /* background-image: linear-gradient(#fc5e55, #f7807a);
+  /*put heigt on your html to avoid that the colors repeat undernneath your page 
+  height: 100%;*/
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  background-image: url(./images/image-lion-background.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.container {
+  min-height: 100px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: lightgray solid 1px;
+  margin-bottom: 15px;
+}
+
+main {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.cards i {
+  font-size: 100px;
+  padding-top: 30px;
+}
+.card1 {
+  background-image: url(./images/image-background-card1.jpg);
+  min-height: 250px;
+  width: 33%;
+  background-size: cover;
+  background-position: bottom;
+}
+.card2 {
+  background-image: url(./images/image-background-card2.jpg);
+  min-height: 250px;
+  width: 33%;
+  background-size: cover;
+  background-position: center;
+}
+.card3 {
+  background-image: url(./images/image-background-card3.jpg);
+  min-height: 250px;
+  width: 33%;
+  background-size: cover;
+  background-position: center;
+}
+article {
+  flex: 2;
+  padding-right: 100px;
+}
+.foto {
+  flex: 1;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 16px;
+  /* px *0.625 is rem*/
+}
+h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+}
+.cards p {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px 30px 10px 30px;
+}
+p {
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.card1,
+.card2,
+.card3 {
+  box-sizing: border-box;
+  padding: 30px, 20px, 30px, 20px;
+}
+.mybutton {
+  font-family: "Playfair Display", Serif;
+  text-decoration: none;
+
+  /* This will take so margin and padding can be added */
+  display: inline-block;
+  padding: 11px 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fc5e55;
+  background-color: white;
+  font-family: "Playfair Display", serif;
+  border-radius: 2px;
+
+  /* box shadow right bottom  opacity color */
+  /*box-shadow: 1px 1px 20px black;
+*/
+}
+.mybutton:hover {
+  background-color: rgba(25, 182, 72, 0.829);
+  transition-duration: 1s;
+}
+.foto img {
+  border-radius: 5px;
+}
+nav {
+  display: flex;
+}
+.navbutton {
+  border: white solid 1px;
+  padding: 11px 25px;
+  font-family: "Playfair Display", serif;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+.dropdown {
+  display: none;
+  padding-top: 10px;
+  text-align: center;
+}
+.navbutton:hover .dropdown {
+  position: absolute;
+  display: block;
+  text-align: center;
+  margin: none;
+}
+/* Target the dropdown menu specifically
+.dropdown .navbutton{
+
+}*/
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.tbox {
+  border: white solid 1px;
+  padding: 20px;
+  width: 47%;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.tbox p {
+  text-align: center;
+}
+.tbox p:last-child {
+  font-size: 12px;
+}
+.inputwrapper {
+  margin: 20px 0px 20px 0px;
+  box-sizing: border-box;
+}
+/* spacing in html &nbsp*/
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 20px;
+  width: 100%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
